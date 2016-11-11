@@ -140,7 +140,7 @@ header {
   margin: 0px 10px 0px 10px;
 }
 
-.item-image-rectangle{
+.item-image-rectangle-landscape{
   height: 225px;
   width: 425px;
   display: inline-block;
@@ -148,6 +148,13 @@ header {
   margin: 0px 10px 0px 10px;
 }
 
+.item-image-rectangle-portrait{
+  height: 425px;
+  width: 225px;
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  margin: 0px 10px 0px 10px;
+}
 /* WORK EXPERIENCE
 -------------------*/
 .work-experience .date {
