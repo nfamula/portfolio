@@ -140,20 +140,29 @@ header {
   margin: 0px 10px 0px 10px;
 }
 
-.item-image-rectangle-landscape{
-  height: 225px;
-  width: 425px;
+.item-image-rectangle-landscape-1{
+  background-color: black;
   display: inline-block;
-  padding: 5px 10px 5px 10px;
-  margin: 0px 10px 0px 10px;
+  height: 215px;
+  width: 425px;
+  margin: 0px 0px 225px 10px;
 }
 
+.item-image-rectangle-landscape-2{
+  background-color: black;
+  display: inline-block;
+  height: 215px;
+  width: 425px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px -430px;
+}
 .item-image-rectangle-portrait{
+  background-color: black;
+  display: inline-block;
   height: 425px;
   width: 225px;
-  display: inline-block;
-  padding: 5px 10px 5px 10px;
-  margin: 5px 25px 5px 40px;
+  padding: 10px 10px 5px 10px;
+  margin: 0px 25px 0px 20px;
 }
 /* WORK EXPERIENCE
 -------------------*/
