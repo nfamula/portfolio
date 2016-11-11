@@ -130,7 +130,7 @@ header {
   float: center;
 }
 
-.item-image img {
+.item-image {
   height: 225px;
   width: 225px;
   padding: 5px;
