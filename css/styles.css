@@ -125,11 +125,16 @@ header {
   margin-bottom: 0;
 }
 
+.item-image-container {
+  width: 80%;
+}
+
 .item-image {
   float: left;
-  width: 20%
   height: 250px;
+  width: 250px;
   padding: 5px;
+  display: inline-block;
 }
 
 /* WORK EXPERIENCE
