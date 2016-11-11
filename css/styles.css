@@ -1,0 +1,312 @@
+/*---------------------------------------
+Template created by Ladies Learning Code 
+http://ladieslearningcode.com
+initial customizations be found here https://github.com/nfamula/llc-responsive-design-workshop/
+-----------------------------------------*/
+
+/* GLOBAL STYLES
+-----------------*/
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  background: url(../images/desk-background.jpg) no-repeat fixed 50%;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+section h1, 
+header h2 {
+  text-transform: uppercase;
+}
+header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80px;
+  color: #AD974F;
+}
+header h2,
+section h1 {
+  font-size: 32px;
+}
+section h1 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* every other section element, 
+starting with the second section */
+section:nth-child(2n+1) { 
+  background: #fefefe;
+}
+section:nth-child(2n+2) {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+a {
+  color: #AD974F;
+}
+.profile a:hover {
+  color: #EAEAEA;
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 20px;
+}
+ul li {
+  margin-bottom: 5px;
+}
+
+.content-wrap {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 90px 0; 
+  overflow: auto;
+}
+
+
+/* HEADER
+----------*/
+header {
+  text-align: center;
+  padding: 200px 50px;
+}
+
+
+/* ABOUT ME / PROFILE
+----------------------*/
+.profile h1 {
+  background: #AD974F;
+  display: inline-block;
+  padding: 10px 20px;
+  transform: rotate(-4deg);
+  margin-bottom: 10px;
+  border: none;
+  color: #EAEAEA;
+}
+.profile .summary {
+  float: left;
+  width: 70%;
+  color: #EAEAEA;
+}
+.profile-image {
+  float: left;
+  width: 27%;
+  margin-right: 3%;
+  padding: 4px;
+  border: 1px solid #EAEAEA;
+  border-radius: 50%;
+}
+
+
+/* WORK EXPERIENCE & EDUCATION
+-------------------------------*/
+/* job & education entries */
+.item {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+.item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+
+/* WORK EXPERIENCE
+-------------------*/
+.work-experience .date {
+  margin: 5px 0 20px 0;
+  font-size: 12px;
+}
+.work-experience h3 {
+  line-height: 1.25;
+  font-size: 16px;
+}
+.work-experience a:hover {
+  color: black;
+}
+.work-experience .details {
+  float: left;
+  width: 30%;
+  padding-right: 30px;
+}
+.work-experience .description {
+  font-size: 14px;
+  width: 70%;
+  float: right;
+  margin-top: 5px;
+}
+.work-experience .description p:first-child {
+  margin-top: 3px;
+}
+
+.company {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: #AD974F;
+}
+
+/* EDUCATION
+-------------*/
+.education h2 {
+  text-transform: uppercase;
+  color: #EAEAEA;
+}
+.education h3 {
+  color: #AD974F;
+}
+
+.education p {
+  color: #EAEAEA;
+}
+
+/* CONTACT & FOOTER 
+--------------------*/
+.contact {
+  background: #111;
+}
+.contact p {
+  margin: 0;
+}
+.contact p:first-of-type {
+  margin-top: 35px;
+}
+.contact .social {
+  width: 50%;
+  float: right;
+  text-align: right;
+  font-size: 30px;
+}
+.contact .social a {
+  margin: 0 8px;
+}
+
+.contact .social a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+footer {
+  clear: both;
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+
+/* MEDIA QUERIES
+--------------------*/
+@media (min-width: 800px) and (max-width: 1000px) {
+  header {
+    padding: 200px 30px 200px 30px;
+  }
+}
+
+/* for tablets
+--------------------*/
+
+@media (min-width: 480px) and (max-width: 800px) {
+  header {
+    padding: 150px 30px 150px 30px;
+  }
+
+  .profile-image {
+    width: 35%;
+    float: right;
+    margin: 0 0 15px 2%;
+  }
+
+  .profile .summary {
+    float: none;
+    width: auto;
+  }
+
+  header h1 {
+    font-size: 65px;
+  }
+}
+
+/* for smartphones
+--------------------*/
+
+@media (max-width: 480px) {
+  header {
+    padding: 100px 30px 100px 30px;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  .profile-image {
+    width: 75%;
+    float: none;
+    margin: 30px 30px 30px 30px;
+  }
+
+  .profile .summary {
+    float: none;
+    width: auto;
+  }
+
+  .work-experience .details {
+    text-align: left;
+    width: 100%;
+  }
+
+  .work-experience .description {
+    text-align: left;
+    width: 100%;
+  }
+
+  .company {
+    font-size: 14px;
+  }
+  
+  .content-wrap {
+    padding: 30px;
+  }
+
+  h1 {
+    padding-bottom: 30px;
+  }
+
+  .work-experience h3 {
+    font-size: 1.5em;
+  }
+
+  .work-experience p {
+    font-size: 16px;
+  }
+
+  .contact .social {
+    width: 100%;
+    float: inherit;
+    text-align: center;
+    font-size: 30px;
+  }
+  .contact p {
+    text-align: center;
+  }
+  section h1 {
+    text-align: center;
+  }
+}
