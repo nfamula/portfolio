@@ -130,9 +130,9 @@ header {
 }
 
 .item-image img {
-  height: 250px;
-  width: 250px;
-  padding: 5px;
+  height: 225px;
+  width: 225px;
+  padding: 225px;
   display: inline-block;
 }
 
