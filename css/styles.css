@@ -120,6 +120,7 @@ header {
   margin-bottom: 20px;
   padding: 20px 0;
 }
+
 .item:last-child {
   border-bottom: none;
   margin-bottom: 0;
@@ -132,7 +133,7 @@ header {
 .item-image img {
   height: 225px;
   width: 225px;
-  padding: 225px;
+  padding: 5px;
   display: inline-block;
 }
 
