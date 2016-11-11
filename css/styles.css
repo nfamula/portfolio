@@ -126,7 +126,7 @@ header {
 }
 
 .item-image-container {
-  width: 80%;
+  float: center;
 }
 
 .item-image img {
