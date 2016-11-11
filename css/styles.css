@@ -125,6 +125,11 @@ header {
   margin-bottom: 0;
 }
 
+.item-image {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
 
 /* WORK EXPERIENCE
 -------------------*/
