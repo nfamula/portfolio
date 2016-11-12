@@ -347,11 +347,11 @@ footer {
   }
 
   .item-image-rectangle-landscape-1{
-  width: 80%;
+  margin: 10px 0px 10px 0px;
   }
   
   .item-image-rectangle-landscape-2{
-  width: 80%;
+  margin: 10px 0px 10px 0px;
   }
 
 }
