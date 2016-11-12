@@ -55,6 +55,7 @@ section:nth-child(2n+2) {
 
 a {
   color: #AD974F;
+  text-decoration: none;
 }
 .profile a:hover {
   color: #EAEAEA;
