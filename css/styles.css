@@ -144,7 +144,7 @@ header {
   display: inline-block;
   height: 215px;
   width: 415px;
-  margin: 0px 0px 225px 10px;
+  margin: 0px 0px 225px 0px;
 }
 
 .item-image-rectangle-landscape-2{
@@ -152,13 +152,13 @@ header {
   height: 215px;
   width: 415px;
   padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px -430px;
+  margin: 0px 0px 0px -418px;
 }
 .item-image-rectangle-portrait{
   display: inline-block;
   width: 215px;
   height: 415px;
-  padding: 10px 10px 5px 10px;
+  padding: 0px 0px 0px 0px;
   margin: 0px 25px 0px 20px;
 }
 /* WORK EXPERIENCE
