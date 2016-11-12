@@ -149,7 +149,7 @@ header {
 
 .item-image-rectangle-landscape-2{
   display: inline-block;
-  height: 100%;
+  width: 100%;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px -430px;
 }
