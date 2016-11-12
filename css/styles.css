@@ -143,21 +143,21 @@ header {
 .item-image-rectangle-landscape-1{
   display: inline-block;
   height: 215px;
-  width: 100%;
+  width: 415px;
   margin: 0px 0px 225px 10px;
 }
 
 .item-image-rectangle-landscape-2{
   display: inline-block;
   height: 215px;
-  width: 100%;
+  width: 415px;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px -430px;
 }
 .item-image-rectangle-portrait{
   display: inline-block;
   width: 215px;
-  height: 100%;
+  height: 415px;
   padding: 10px 10px 5px 10px;
   margin: 0px 25px 0px 20px;
 }
