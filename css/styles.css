@@ -345,4 +345,13 @@ footer {
   section h1 {
     text-align: center;
   }
+  
+  .item-image-rectangle-landscape-1{
+  display: none;
+  }
+  
+  .item-image-rectangle-landscape-2{
+  display: none;
+  }
+
 }
