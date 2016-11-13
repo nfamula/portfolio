@@ -397,6 +397,7 @@ footer {
   height: auto;
   margin: 0px;
   padding-bottom: 5px;
+  overflow: auto;
   }
   
   .item-image-rectangle-landscape-2{
@@ -404,6 +405,7 @@ footer {
   height: auto;
   margin: 0px;
   padding-bottom: 5px;
+  overflow: auto;
   }
 
   .item-image-rectangle-portrait{
