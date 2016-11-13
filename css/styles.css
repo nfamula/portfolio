@@ -258,7 +258,7 @@ footer {
   .image-container {
     width: 100%;
     height: auto;
-    display: inline-block;
+    display: inline-block !important;
   }
 }
 /*for large screens 
