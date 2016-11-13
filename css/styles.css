@@ -262,7 +262,7 @@ footer {
     padding: 200px 30px 200px 30px;
   }
 
-  #right-side{
+  #right-side .item-image-rectangle-portrait{
     display: none;
   } 
 }
