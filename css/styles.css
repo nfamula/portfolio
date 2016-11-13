@@ -250,7 +250,7 @@ footer {
 /*for extra-large screens 
 --------------------*/
 
-@media (min-width: 1170px) {
+@media (min-width: 1000px) {
   header {
     padding: 200px 30px 200px 30px;
   }
@@ -264,7 +264,7 @@ footer {
 }
 /*for large screens 
 --------------------*/
-@media (min-width: 850px) and (max-width: 1170px) {
+@media (min-width: 850px) and (max-width: 1000px) {
   header {
     padding: 200px 30px 200px 30px;
   }
