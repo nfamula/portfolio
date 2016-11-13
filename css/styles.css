@@ -392,6 +392,12 @@ footer {
     text-align: center;
   }
 
+  .image-container {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+
   .item-image-rectangle-landscape-1{
   width: 260px;
   height: auto;
