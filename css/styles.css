@@ -259,7 +259,7 @@ footer {
     width: 100%;
     height: auto;
     padding-top: 0px;
-    display: inline-block !important;
+    display: inline-block;
   }
 }
 /*for large screens 
