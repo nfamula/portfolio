@@ -246,11 +246,27 @@ footer {
 
 /* MEDIA QUERIES
 --------------------*/
-@media (min-width: 800px) and (max-width: 1000px) {
+
+/*for extra-large screens 
+--------------------*/
+
+@media (min-width: 1000px) {
   header {
     padding: 200px 30px 200px 30px;
   }
 }
+/*for large screens 
+--------------------*/
+@media (min-width: 800px) and (max-width: 1000px) {
+  header {
+    padding: 200px 30px 200px 30px;
+  }
+
+  .item-image-rectangle-portrait #right-side{
+    display: none;
+  } 
+}
+
 
 /* for tablets
 --------------------*/
