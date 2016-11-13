@@ -261,7 +261,7 @@ footer {
   header {
     padding: 200px 30px 200px 30px;
   }
-  
+
   .image-container {
     width: 100%;
     height: auto;
@@ -398,6 +398,7 @@ footer {
 
   .item-image-rectangle-portrait{
   width: 260px;
+  height: auto;
   margin: 0px;
   } 
 }
