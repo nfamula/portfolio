@@ -258,6 +258,7 @@ footer {
   .image-container {
     width: 100%;
     height: auto;
+    margin: auto auto;
     padding-top: 0px;
     display: inline-block;
   }
