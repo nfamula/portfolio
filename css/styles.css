@@ -261,6 +261,12 @@ footer {
   header {
     padding: 200px 30px 200px 30px;
   }
+  
+  .image-container {
+    width: 100%;
+    height: auto;
+    display: inline-block
+  }
 
   #right-side.item-image-rectangle-portrait{
     display: none;
