@@ -278,6 +278,16 @@ footer {
   #right-side.item-image-rectangle-portrait{
     display: none;
   } 
+  
+  .item-image-rectangle-landscape-1{
+  width: 100%;
+  height: auto;
+  }
+
+  .item-image-rectangle-landscape-2{
+  width: 100%;
+  height: auto;
+  }
 }
 
 
