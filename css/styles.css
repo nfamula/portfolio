@@ -396,17 +396,20 @@ footer {
   width: 260px;
   height: auto;
   margin: 0px;
+  padding-bottom: 5px;
   }
   
   .item-image-rectangle-landscape-2{
   width: 260px;
   height: auto;
   margin: 0px;
+  padding-bottom: 5px;
   }
 
   .item-image-rectangle-portrait{
   width: 260px;
   height: auto;
   margin: 0px;
+  padding-bottom: 5px;
   } 
 }
