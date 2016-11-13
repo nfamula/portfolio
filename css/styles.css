@@ -257,7 +257,7 @@ footer {
 }
 /*for large screens 
 --------------------*/
-@media (min-width: 800px) and (max-width: 1070px) {
+@media (min-width: 800px) and (max-width: 1170px) {
   header {
     padding: 200px 30px 200px 30px;
   }
