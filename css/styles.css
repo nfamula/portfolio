@@ -392,14 +392,8 @@ footer {
     text-align: center;
   }
 
-  .image-container {
-    width: 100%;
-    height: auto;
-    display: inline-block;
-  }
-
   .item-image-rectangle-landscape-1{
-  width: 260px;
+  width: 100%;
   height: auto;
   margin: 0px;
   padding-bottom: 5px;
@@ -407,7 +401,7 @@ footer {
   }
   
   .item-image-rectangle-landscape-2{
-  width: 260px;
+  width: 100%;
   height: auto;
   margin: 0px;
   padding-bottom: 5px;
@@ -415,7 +409,7 @@ footer {
   }
 
   .item-image-rectangle-portrait{
-  width: 260px;
+  width: 100%;
   height: auto;
   margin: 0px;
   padding-bottom: 5px;
