@@ -254,10 +254,16 @@ footer {
   header {
     padding: 200px 30px 200px 30px;
   }
+
+  .image-container {
+    width: 100%;
+    height: auto;
+    display: inline-block
+  }
 }
 /*for large screens 
 --------------------*/
-@media (min-width: 850px) and (max-width: 1170px) {
+@media (min-width: 850px) and (max-width: 1160px) {
   header {
     padding: 200px 30px 200px 30px;
   }
