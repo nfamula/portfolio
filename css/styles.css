@@ -194,6 +194,14 @@ header {
   letter-spacing: 0.1em;
   color: #AD974F;
 }
+/*SKILLS
+----------*/
+.skills h2 {
+color: #FFFFFF;
+}
+.skills p{
+ color: #FFFFFF;
+}
 
 /* EDUCATION
 -------------*/
