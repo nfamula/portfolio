@@ -196,8 +196,9 @@ header {
 }
 /*SKILLS
 ----------*/
-.skills h2 {
+.skills h1 {
 color: #FFFFFF;
+text-transform: uppercase;
 }
 .skills p{
  color: #FFFFFF;
