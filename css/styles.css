@@ -1,6 +1,4 @@
 /*---------------------------------------
-Template created by Ladies Learning Code 
-http://ladieslearningcode.com
 initial customizations be found here https://github.com/nfamula/llc-responsive-design-workshop/
 -----------------------------------------*/
 
@@ -201,14 +199,14 @@ header {
 -------------*/
 .education h2 {
   text-transform: uppercase;
-  color: #EAEAEA;
+  color: #000000;
 }
 .education h3 {
   color: #AD974F;
 }
 
 .education p {
-  color: #EAEAEA;
+  color: #000000;
 }
 
 /* CONTACT & FOOTER 
