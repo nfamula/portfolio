@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <!-- ADD THE VIEWPORT META TAG HERE -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Natalie Famula | Front-End Developer</title>
+    <title>Natalie Famula | Web Developer</title>
     <link rel='shortcut icon' href='images/nataliefavicon.png'/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|Merriweather|Pacifico' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Ultra" rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel='stylesheet'>
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
     <!-- PUT THE STYLESHEET LINK HERE -->
     <link rel="stylesheet" href="css/styles.css">
@@ -17,44 +19,54 @@
     <!-- HEADER -->
     <header>
       <h1>Natalie Famula</h1>
-      <h2>Front-End Developer</h2>
+      <h2>Web Developer</h2>
+      <a class="button" href="#projects">view projects</a>
     </header>
-
-    <!-- ABOUT ME / PROFILE -->
-    <section class="profile">
-      <div class="content-wrap">
-        <img class="profile-image" src="images/profile-pic-professional.jpg" alt="Profile Picture">
-        <div class="summary">
-          <h1>Hello!</h1>
-          <p>I am a Front-End Developer with a little over 1 year of professional experience. Looking for a new challenge, I made a career change into web development and I am happiest when I am in a role that is fast paced, pushing me to learn. In the past year, I have developed web apps and static sites, creating a range of templates and themes.</p>
-          <p>You can view my completed projects below.</p>
-          <p>I am currently working on a wordpress/woocommerce project that will be launched in October.</p>
-          <p>Check out my profiles <a href="https://github.com/nfamula" target="_blank">github</a>, <a href="http://codepen.io/nfamula/" target="_blank">codepen</a>, <a href="https://ca.linkedin.com/in/nataliefamula" target="_blank">LinkedIn </a>.</p>
-        </div>
-      </div>
-    </section>
-
-
+    <div class="social" style="text-align: center;">
+        <a href="https://twitter.com/ColourfulCactus" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://ca.linkedin.com/in/nataliefamula" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/colourful_cactus/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://github.com/nfamula" target="_blank" title="Github"><i class="fa fa-github-alt"></i></a>
+    </div>
     <!-- WORK EXPERIENCE -->
-    <section class="work-experience">
+    <section class="work-experience" id="projects">
       <div class="content-wrap">
         <h1>Projects</h1>
+
+        <div class="item">
+          <div class="details">
+            <a href="https://blackmarketmealprep.com/" target="_blank"><h2 class="company">Black Market Meal Prep</h2></a>
+            <p class="date">August - October 2017</p>
+            <a class="button" href="https://blackmarketmealprep.com/" target="_blank">view website</a>
+          </div>
+          <br />
+          <div class="item-image-container">
+            <a href="https://blackmarketmealprep.com/" target="_blank">
+              <img class="item-image-rectangle-portrait" src="images/bmmp-Screenshot1.png" alt="Project Screenshot">
+              <img class="item-image-rectangle-landscape-1" src="images/bmmp-Screenshot.png" alt="Project Screenshot">
+              <img class="item-image-rectangle-landscape-2" src="images/bmmp-Screenshot3.png" alt="Project Screenshot">
+              <img class="item-image-rectangle-portrait" id="right-side" src="images/bmmp-Screenshot2.png" alt="Project Screenshot">
+            </a>
+          </div>
+          <div class="description">
+            <p>E-commerce shop refresh for California based meal-prep company.</p>
+            <input type="checkbox" class="read-more-state" id="post" />
+            <p class="read-more-target">
+            Custom wordpress/woocommerce theme with custom meal packs and meal deals.
+            My role focused mainly on shop functionality, and adding custom features. Deployed from development environment to permanent URL with CPanel. Worked on development server with FileZilla as FTP client, used trello for project management.
+            Built with PHP (wordpress), HTML5, CSS3, Javascript, jQuery.
+            </p>
+          <label for="post" id="posttrigger" class="read-more-trigger"></label>
+          </div>
+        </div>
 
           <div class="item">
           <div class="details">
             <a href="http://liveinprescott.ca/" target="_blank"><h2 class="company">Live In Prescott</h2></a>
             <h3>Giants & Gentlemen</h3>
             <p class="date">March 2017</p>
+            <a class="button" href="http://liveinprescott.ca/" target="_blank">view website</a>
           </div>
-          <div class="description">
-            <p>Total campaign refresh for agency real estate development client based on approved designs.</p>
-            <p>Developed Wordpress theme with reusable templates for pages, and uploaded content from designer's photoshop files.</p> 
-            <p>Consulted with Art Director and incorporated client feedback.</p>
-            <p>Worked on development server with FileZilla as FTP client, used Airtable for project management.</p>
-            <p>Deployed from development environment to permanent URL with C Panel.</p>
-            <p>Built with PHP (wordpress), HTML5, CSS3, Javascript, jQuery.</p>
-          </div>
-          <br />
           <br />
           <div class="item-image-container">
             <a href="http://liveinprescott.ca/" target="_blank">
@@ -64,6 +76,15 @@
               <img class="item-image-rectangle-portrait" id="right-side" src="images/Prescott-Screenshot2.png" alt="Project Screenshot">
             </a>
           </div>
+          <div class="description">
+            <p>Website refresh for real estate developer.</p>
+            <input type="checkbox" class="read-more-state" id="post1" />
+            <p class="read-more-target">Custom wordpress theme with reusable templates for pages, and uploaded content from photoshop files.
+            Worked on development server with FileZilla as FTP client, used Airtable for project management.
+            Deployed from development environment to permanent URL with CPanel.
+            Built with PHP (wordpress), HTML5, CSS3, Javascript, jQuery.</p>
+            <label for="post1" id="post1trigger" class="read-more-trigger"></label>
+          </div>
         </div>
 
         <div class="item">
@@ -71,13 +92,7 @@
             <a href="http://oneatwindermere.com/" target="_blank"><h2 class="company">One at Windermere</h2></a>
             <h3>Giants & Gentlemen</h3>
             <p class="date">February 2017</p>
-          </div>
-          <div class="description">
-            <p>Total campaign refresh for agency real estate development client based on approved designs.</p>
-            <p>Developed Wordpress theme with jQuery drop down content sections, and uploaded content from designer's photoshop files.</p> 
-            <p>Consulted with Art Director and incorporated client feedback.</p>
-            <p>Worked on development server with FileZilla as FTP client, used Airtable for project management.</p>
-            <p>Built with PHP (wordpress), HTML5, CSS3, Javascript, jQuery.</p>
+            <a class="button" href="http://oneatwindermere.com/" target="_blank">view website</a>
           </div>
           <br />
           <div class="item-image-container">
@@ -88,6 +103,14 @@
               <img class="item-image-rectangle-portrait" id="right-side" src="images/Windermere-Screenshot2.png" alt="Project Screenshot">
             </a>
           </div>
+          <div class="description">
+            <p>Website refresh for real estate developer.</p>
+            <input type="checkbox" class="read-more-state" id="post2" />
+            <p class="read-more-target">Developed Wordpress theme with jQuery drop down content sections, and uploaded content from designer's photoshop files.
+            Worked on development server with FileZilla as FTP client, used Airtable for project management.
+            Built with PHP (wordpress), HTML5, CSS3, Javascript, jQuery.</p>
+            <label for="post2" id="post2trigger" class="read-more-trigger"></label>
+          </div>
         </div>
 
         <div class="item">
@@ -95,13 +118,7 @@
             <a href="http://dukesrefresher.ca/" target="_blank"><h2 class="company">Duke's</h2></a>
             <h3>Giants & Gentlemen</h3>
             <p class="date">January 2017</p>
-          </div>
-          <div class="description">
-            <p>New website build for restaurant based on approved designs.</p>
-            <p>Assisted senior developer in developing wordpress theme.</p>
-            <p>Uploaded and edited content for all restaurant menu items.</p>
-            <p>Manually installed wordpress plugins.</p>
-            <p>Built with PHP (wordpress), HTML5, CSS3, Javascript, jQuery.</p>
+            <a class="button" href="http://dukesrefresher.ca/" target="_blank">view website</a>
           </div>
           <br />
           <div class="item-image-container">
@@ -112,6 +129,15 @@
               <img class="item-image-rectangle-portrait" id="right-side" src="images/Dukes-Screenshot2.png" alt="Project Screenshot">
             </a>
           </div>
+          <div class="description">
+            <p>New website build for Duke's restaurant.</p>
+            <input type="checkbox" class="read-more-state" id="post3" />
+            <p class="read-more-target">Assisted senior developer in developing wordpress theme.
+            Uploaded and edited content for all restaurant menu items.
+            Manually installed wordpress plugins.
+            Built with PHP (wordpress), HTML5, CSS3, Javascript, jQuery.</p>
+            <label for="post3" id="post3trigger" class="read-more-trigger"></label>
+          </div>
         </div>
 
         <div class="item">
@@ -119,21 +145,9 @@
             <a href="http://bayviewvillageshops.com/" target="_blank"><h2 class="company">Bayview Village Shops</h2></a>
             <h3>Nuclear Media Inc.</h3>
             <p class="date">July 2016 - October 2016</p>
+            <a class="button" href="http://bayviewvillageshops.com/" target="_blank">view website</a>
           </div>
-          <div class="description">
-            <p>Built with ReactJS, HTML5, CSS3, React-Bootstrap, NPM, Webpack, SCSS, JSON.</p>
-            <p>
-            Layouts and styling for Guest Services, Leasing, Visit Us, Media Room, Contact Us, Privacy Policy, BVTV, and Employment pages as well as footer working from PSDs created by designer.
-            <br/>
-            Added map with google maps API.
-            <br />
-            Used ReactJS to iterate through JSON mixins to display data while database was under construction.
-            <br /> 
-            Provided UX feedback to designer.
-            <br />
-            Worked on development server with FileZilla as FTP client, used JIRA for project management.
-            </p>
-          </div>
+          <br />
           <div class="item-image-container">
             <a href="http://bayviewvillageshops.com/" target="_blank">
               <img class="item-image-rectangle-portrait" src="images/Bayview-Village-Screenshot1.png" alt="Project Screenshot">
@@ -142,6 +156,18 @@
               <img class="item-image-rectangle-portrait" id="right-side" src="images/Bayview-Village-Screenshot2.png" alt="Project Screenshot">
             </a>
           </div>
+          <div class="description">
+            <p>Website refresh for Bayview Village shopping mall.</p>
+            <input type="checkbox" class="read-more-state" id="post4" />
+            <p class="read-more-target">
+            Built with ReactJS, HTML5, CSS3, React-Bootstrap, NPM, Webpack, SCSS, JSON.
+            Layouts and styling for Guest Services, Leasing, Visit Us, Media Room, Contact Us, Privacy Policy, BVTV, and Employment pages as well as footer working from PSDs created by designer.
+            Added map with google maps API.
+            Used ReactJS to iterate through JSON mixins to display data while database was under construction.
+            Provided UX feedback.
+            Worked on development server with FileZilla as FTP client, used JIRA for project management.</p>
+            <label for="post4" id="post4trigger" class="read-more-trigger"></label>
+          </div>
         </div>
 
         <div class="item">
@@ -149,13 +175,9 @@
             <a href="http://clearviewtea.ca/" target="_blank"><h2 class="company">Clearview Tea Co.</h2></a>
             <h3>Nuclear Media Inc.</h3>
             <p class="date">April 2016 - June 2016</p>
+            <a class="button" href="http://clearviewtea.ca/" target="_blank">view website</a>
           </div>
-          <div class="description">
-            <p>Collaborated with senior php developer to customize Wordpress Layers theme and created products in WooCommerce shop. HTML5, CSS3, JQuery, AJAX, and some PHP used.</p>
-            <p>Installed Wordpress plugins, implemented new UX features, optimized for mobile devices.</p>
-            <p>Selected and sourced stock images</p>
-            <p>Worked on development server, using FileZilla as FTP client.</p>
-          </div>
+          <br />
           <div class="item-image-container">
             <a href="http://clearviewtea.ca/" target="_blank">
               <img class="item-image-rectangle-portrait" src="images/Clearview-Tea-Screenshot1.png" alt="Project Screenshot">
@@ -164,19 +186,23 @@
               <img class="item-image-rectangle-portrait" id="right-side" src="images/Clearview-Tea-Screenshot2.png" alt="Project Screenshot">
             </a>
           </div>
+          <div class="description">
+          <p>New website build for local tea company.</p>
+          <input type="checkbox" class="read-more-state" id="post5" />
+          <p class="read-more-target">Collaborated with senior php developer to customize Wordpress Layers theme and created products in WooCommerce shop. HTML5, CSS3, JQuery, AJAX, and some PHP used.
+          Installed Wordpress plugins, implemented new UX features, optimized for mobile devices.
+          Worked on development server, using FileZilla as FTP client.</p>
+          <label for="post5" id="post5trigger" class="read-more-trigger"></label>
+          </div>
         </div>
 
         <div class="item">
           <div class="details">
             <a href="http://prefabdrywall.ca/" target="_blank"><h2 class="company">Prefab Dry Wall</h2></a>
-            <h3>Freelance</h3>
             <p class="date">May 2016</p>
+            <a class="button" href="http://prefabdrywall.ca/" target="_blank">view website</a>
           </div>
-          <div class="description">
-            <p>Customized themeforest wordpress theme using CSS3 and HTML5, based on client drawings.</p>
-            <p>Assisted designer in creating content as per client's specifications.</p>
-            <p>Populated theme with content.</p>
-          </div>
+          <br />
           <div class="item-image-container">
             <a href="http://prefabdrywall.ca/" target="_blank">
               <img class="item-image-rectangle-portrait" src="images/Prefab-Drywall-Screenshot1.png" alt="Project Screenshot">
@@ -185,20 +211,23 @@
               <img class="item-image-rectangle-portrait" id="right-side" src="images/Prefab-Drywall-Screenshot3.png" alt="Project Screenshot">
             </a>
           </div>
+          <div class="description">
+          <p>New webiste build for local drywall company.</p>
+          <input type="checkbox" class="read-more-state" id="post6" />
+            <p class="read-more-target">Customized themeforest wordpress theme using CSS3 and HTML5, based on mock ups.
+            Created content as per client's specifications.
+            Populated theme with content.</p>
+          <label for="post6" id="post6trigger" class="read-more-trigger"></label>
+          </div>
         </div>
 
         <div class="item">
           <div class="details">
-            <a href="http://nuclearmedia.com/" target="_blank"><h2 class="company">nuclear</h2></a>
-            <h3>Freelance</h3>
+            <a href="http://nuclearmedia.com/" target="_blank"><h2 class="company">Nuclear Media</h2></a>
             <p class="date">April 2016</p>
+            <a class="button" href="http://nuclearmedia.com/" target="_blank">view website</a>
           </div>
-          <div class="description">
-            <p>Built with HTML5, CSS3, bootstrap, SCSS, Jekyll.</p>
-            <p>Customized Jekyll template for local digital agency, to reflect re-brand, and make responsive, in
-            collaboration with agency creative lead and senior developer. </p>
-            <p>Assisted with copy-writing.</p>
-          </div>
+          <br />
           <div class="item-image-container">
             <a href="http://nuclearmedia.com/" target="_blank">
               <img class="item-image-rectangle-portrait" src="images/Nuclear-Screenshot3.png" alt="Project Screenshot">
@@ -207,17 +236,22 @@
               <img class="item-image-rectangle-portrait" id="right-side" src="images/Nuclear-Screenshot1.png" alt="Project Screenshot">
             </a>
           </div>
+          <div class="description">
+          <p>New website build for digital marketing agency.</p>
+          <input type="checkbox" class="read-more-state" id="post7" />   
+            <p class="read-more-target">Built with HTML5, CSS3, bootstrap, SCSS, Jekyll.
+            Customized Jekyll template for local digital agency, to reflect re-brand, and make responsive, in
+            collaboration with agency creative director and senior developer.
+            Assisted with copy-writing.</p>          
+          <label for="post7" id="post7trigger" class="read-more-trigger"></label>
+          </div>
         </div>
 
         <div class="item">
           <div class="details">
             <a href="http://trend-report.herokuapp.com/fashion/women/articles/" target="_blank"><h2 class="company">Trend Report</h2></a>
-            <h3>Lighthouse Labs Final Project</h3>
             <p class="date">March 2016</p>
-          </div>
-          <div class="description">
-            <p>Trend Report was built using Ruby, Ruby on Rails, PostgreSQL, HTML5, CSS3 and jQuery, with partner Sandeep Samra.</p>
-            <p>It is a web application that scrapes trendy blogs and websites and provides articles for different categories including food and fashion. The purpose of this application is to allow a user to access articles related to a certain category without having to go to each individual blog or website. Stuff I learned: how to work with a bootstrap based theme, the importance of mobile optimizations, and you definitely shouldn't use a hard coded web-scraper 'cause it won't ever run again after deployment (background workers would have been a better choice).</p>
+            <a class="button" href="http://trend-report.herokuapp.com/fashion/women/articles/" target="_blank">view website</a>
           </div>
           <br />
           <div class="item-image-container" target="_blank">
@@ -228,18 +262,19 @@
               <img class="item-image-rectangle-portrait" id="right-side" src="images/Trend-Report-Screenshot3.png" alt="Project Screenshot">
             </a>
           </div>
+          <div class="description">
+            <p>Lighthouse Labs Final Project</p>
+            <input type="checkbox" class="read-more-state" id="post8" />
+              <p class="read-more-target">This project was built using Ruby, Ruby on Rails, PostgreSQL, HTML5, CSS3 and jQuery, with partner Sandeep Samra. Trend Report is a web application that scrapes trendy blogs and websites and provides articles from different categories including food and fashion. The purpose of this application is to allow a user to access articles related to a certain category without having to visit each individual blog or website. What I learned: how to work with a bootstrap based theme, the importance of mobile optimizations, and you definitely shouldn't use a hard coded web-scraper 'cause it won't ever scrape again after deployment (background workers would have been a better choice).</p>
+            <label for="post8" id="post8trigger" class="read-more-trigger"></label>
+          </div>
         </div>
 
         <div class="item">
           <div class="details">
             <a href="https://github.com/nfamula/midterm-bookworm" target="_blank"><h2 class="company">Bookworm</h2></a>
-            <h3>Lighthouse Labs Midterm Project</h3>
             <p class="date">February 2016</p>
-          </div>
-          <div class="description">
-            <p>Bookworm was built using Sinatra, Ruby, HTML5 and CSS3 with partner Sandeep Samra in just three days! </p>
-            </p>Web app for managing the books you're reading, and the books you want to read. You can add a book and a cover photo to your list of books you want to read, and once you're done reading you can move it to another list that you can look at later.</p>
-            <p> Stuff I learned: determination with a tight deadline, proper encryption for logins, and deployment doesn't always go according to plan!</p>
+            <a class="button" href="https://github.com/nfamula/midterm-bookworm" target="_blank">view on github</a>
           </div>
           <br />
           <div class="item-image-container">
@@ -250,19 +285,26 @@
               <img class="item-image-rectangle-portrait" id="right-side" src="images/Bookworm-Screenshot2.png" alt="Project Screenshot">
             </a>
           </div>
+          <div class="description">
+            <p>Lighthouse Labs Midterm Project</p>
+            <input type="checkbox" class="read-more-state" id="post9" />
+            <p class="read-more-target"">Bookworm was built using Sinatra, Ruby, HTML5 and CSS3 with partner Sandeep Samra in just three days!
+            Web app for managing the books you're reading, and the books you want to read. You can add a book and a cover photo to your list of books you want to read, and once you're done reading you can move it to another list that you can look at later.</p>
+            <label for="post9" id="post9trigger" class="read-more-trigger"></label>
+          </div>
         </div>
 
-        <div class="item">
+<!--         <div class="item">
           <div class="details">
             <a href="https://colourfulcactus.com" target="_blank"><h2 class="company">Colourful Cactus</h2></a>
             <h3>Travel Blogger</h3>
-            <p class="date">2013 - Present</p>
+            <p class="date">2013 - 2016</p>
           </div>
           <div class="description">
-              <p>Chronicling my travels around the world, and my previous career as a flight attendant. Wordpress blog, with some customizations. Creating this blog and learning about wordpress inspired me to learn to code, and after getting my hands dirty with some tutorials I decided to enroll in Lighthouse Labs bootcamp and further my code education.</p>
+              <p>How it all began! Chronicling my travels around the world, and my previous career as a flight attendant. Wordpress blog, with some customizations. Creating this blog and learning about wordpress inspired me to learn to code, and after getting my hands dirty with some tutorials I decided to enroll in Lighthouse Labs bootcamp.</p>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     <!--Skills -->
     <div class="skills">
@@ -279,7 +321,7 @@
         <br />
         PHP for wordpress, woocommerce
         <br />
-        Extracting graphics, copy, and various content from Photoshop files
+        Extracting content from Photoshop files
         <br />
         Google Analytics goals and implementation of tracking pixels
         <br />
@@ -297,11 +339,13 @@
       <div class="content-wrap">
         <h1>Education</h1>
 
-        <div class="item">
+        <div class="item" id="lighthouse">
           <h2>Lighthouse Labs, January - March 2016</h2>
           <h3>Web Developer Bootcamp</h3>
-          <p>Successfully completed full time 8 week web developer bootcamp, and deployed 2 web applications.</p>
-          <p>Topics Covered:
+           <input type="checkbox" class="read-more-state" id="post10" />
+          <p class="read-more-target">Successfully completed full time 8 week web developer bootcamp, and deployed 2 web applications.
+          <br />
+          Topics Covered:
           <br />
           Programming Languages: Ruby, JavaScript,  HTML5, CSS3
           <br />
@@ -318,18 +362,22 @@
           Google Analytics goals and implementation
           <br />
           OOP, AJAX, JSON, REST, MVC</p>
+          <label for="post10" id="post10trigger" class="read-more-trigger" style="margin-left: none !important"></label>
+        </div>
+        <div class="item" id="glendon">
           <br />
           <h2>York University - Glendon, Class of 2011</h2>
           <h3>Honours BA Linguistics</h3>
-          <p>Awarded Certificate of Bilingualism.
+          <input type="checkbox" class="read-more-state" id="post11" />
+          <p class="read-more-target">Awarded Certificate of Bilingualism.
           <br />
           Awarded William Westfall Canadian Studies Award.
           <br />
           Vice President Glendon Linguistics Club
           <br />
           Courses included: Symbolic Logic, Syntax, Semantics, Statistics</p>
+          <label for="post11" id="post11trigger" class="read-more-trigger" style="margin-left: none !important"></label>
         </div>
-      
       </div>
     </section>
 
