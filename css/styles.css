@@ -1,7 +1,6 @@
 /*---------------------------------------
 initial customizations be found here https://github.com/nfamula/llc-responsive-design-workshop/
 -----------------------------------------*/
-
 /* GLOBAL STYLES
 -----------------*/
 /* apply a natural box layout model to all elements */
@@ -10,49 +9,70 @@ initial customizations be found here https://github.com/nfamula/llc-responsive-d
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
-  background: url(../images/desk-background.jpg) no-repeat fixed 50%;
+  background: url(../images/computer-background.jpg) no-repeat fixed 50%;
   background-size: cover;
   padding: 0;
   margin: 0;
 }
 
 h1, h2, h3, h4 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   margin: 0;
+  color: #3e3e40;
 }
 section h1, 
 header h2 {
   text-transform: uppercase;
+  color: #3e3e40;
 }
 header h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ultra', serif;
   font-size: 80px;
-  color: #AD974F;
+  color: #f3c3c4;
 }
 header h2,
 section h1 {
-  font-size: 32px;
+  font-size: 30px;
+  color: #b1b1b1;
+  margin-bottom: 15px;
 }
 section h1 {
   border-bottom: 1px solid #ccc;
   margin-bottom: 20px;
 }
+p {
+  color: #3e3e40;
+  font-family: 'Open Sans', sans-serif;
+}
+.button {
+  color: #3e3e40;
+  padding: 5px 10px;
+  border: 2px solid #b1b1b1;
+  border-radius: 25px;
+  background: #b1b1b1;
+  font-family: 'Open Sans', sans-serif;
+}
 
+.button:hover {
+  background: #3e3e40;
+  color: #b1b1b1;
+  border: 2px solid #3e3e40;
+}
 /* every other section element, 
 starting with the second section */
 section:nth-child(2n+1) { 
   background: #fefefe;
 }
 section:nth-child(2n+2) {
-  color: #fff;
-  background: rgba(0, 0, 0, 0.8);
+  color: #f3c3c4;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 a {
-  color: #AD974F;
+  color: #f3c3c4;
   text-decoration: none;
 }
 .profile a:hover {
@@ -81,13 +101,14 @@ ul li {
 header {
   text-align: center;
   padding: 200px 50px;
+  width: 100%;
 }
 
 
 /* ABOUT ME / PROFILE
 ----------------------*/
 .profile h1 {
-  background: #AD974F;
+  background: #f3c3c4;
   display: inline-block;
   padding: 10px 20px;
   transform: rotate(-4deg);
@@ -108,7 +129,60 @@ header {
   border: 1px solid #EAEAEA;
   border-radius: 50%;
 }
+/*READ MORE BUTTONS
+-------------------------------*/
+/* read more buttons */
+.read-more-state {
+  display: none;
+}
 
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+  position: relative;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'read more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'read less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: table;
+  padding: 0 .5em;
+  color: #b1b1b1;
+  background-color: #3e3e40;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #3e3e40;
+  border-radius: .25em;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  -webkit-tap-highlight-color: #f3c3c4;
+}
+
+.read-more-trigger:hover{
+  background-color: #f3c3c4;
+  border: 1px solid #f3c3c4;
+  color: #3e3e40;
+}
+
+label#post10trigger.read-more-trigger, label#post11trigger.read-more-trigger {
+  margin-left: unset;
+}
 
 /* WORK EXPERIENCE & EDUCATION
 -------------------------------*/
@@ -124,11 +198,17 @@ header {
   border-bottom: none;
   margin-bottom: 0;
 }
-
+.item#lighthouse{
+  border-bottom: none;
+  margin-bottom: 0px;
+}
 .item-image-container {
   width: 100%;
   height: 20%;
-  padding-top: 20%;
+  padding-top: 13%;
+  padding-bottom: 3%;
+  text-align: center;
+  margin: auto;
 }
 
 .item-image{
@@ -156,7 +236,7 @@ header {
 .item-image-rectangle-portrait{
   display: inline-block;
   width: 215px;
-  height: 440px;
+  height: auto;
   padding: 0px 0px 0px 0px;
   margin: 0px 20px 0px 20px;
 }
@@ -170,54 +250,62 @@ header {
   line-height: 1.25;
   font-size: 16px;
 }
-.work-experience a:hover {
+.work-experience a.read-more-trigger:hover {
   color: black;
 }
 .work-experience .details {
   float: left;
-  width: 30%;
+  width: 45%;
   padding-right: 30px;
 }
 .work-experience .description {
   font-size: 14px;
-  width: 70%;
-  float: right;
+  text-align: center;
   margin-top: 5px;
+  padding-bottom: 3%;
 }
 .work-experience .description p:first-child {
   margin-top: 3px;
+  text-align: center;
 }
 
 .company {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.1em;
-  color: #AD974F;
+  color: #f3c3c4;
+}
+
+.work-experience < a.button:hover {
+  background: #f3c3c4;
+  border: 2px solid #f3c3c4;
 }
 /*SKILLS
 ----------*/
+.skills {
+  background: rgba(0, 0, 0, 0.4);
+}
+
 .skills h1 {
-color: #FFFFFF;
+color: #b1b1b1;
 text-transform: uppercase;
 }
 .skills p{
- color: #FFFFFF;
+ color: #f3c3c4;
 }
 
 /* EDUCATION
 -------------*/
 .education h2 {
   text-transform: uppercase;
-  color: #000000;
+  color: #3e3e40;
 }
 .education h3 {
-  color: #AD974F;
+  color: #f3c3c4;
 }
 
 .education p {
-  color: #000000;
+  color: #3e3e40;
 }
-
 /* CONTACT & FOOTER 
 --------------------*/
 .contact {
@@ -225,6 +313,7 @@ text-transform: uppercase;
 }
 .contact p {
   margin: 0;
+  color: #b1b1b1;
 }
 .contact p:first-of-type {
   margin-top: 35px;
@@ -237,11 +326,11 @@ text-transform: uppercase;
 }
 .contact .social a {
   margin: 0 8px;
-  color: #FFF;
+  color: #b1b1b1;
 }
 
 .contact .social a:hover {
-  color: #AD974F;
+  color: #f3c3c4;
   text-decoration: none;
 }
 
@@ -258,9 +347,10 @@ footer {
 /*for extra-large screens 
 --------------------*/
 
-@media (min-width: 1170px) {
+@media (min-width: 1170px) 
+and (orientation: portrait) {
   header {
-    padding: 200px 30px 200px 30px;
+    padding: 193px 50px;
   }
 
   .image-container {
@@ -271,11 +361,25 @@ footer {
     display: inline-block;
   }
 }
-/*for large screens 
+@media (min-width: 1170px) 
+and (orientation: landscape) {
+  header {
+    padding: 193px 50px;
+  }
+
+  .image-container {
+    width: 100%;
+    height: auto;
+    margin: auto auto;
+    padding-top: 0px;
+    display: inline-block;
+  }
+}
+/*for large tablets 
 --------------------*/
 @media (min-width: 850px) and (max-width: 1170px) {
   header {
-    padding: 200px 30px 200px 30px;
+    padding: 193px 50px;
   }
 
   .image-container {
@@ -286,16 +390,23 @@ footer {
 
   #right-side.item-image-rectangle-portrait{
     display: none;
-  } 
+  }
 }
 
 
-/* for tablets
+/* for bigger smartphones and small tablets
 --------------------*/
 
-@media (min-width: 480px) and (max-width: 850px) {
+@media (min-width: 480px) and (max-width: 850px) 
+and (orientation: portrait) {
   header {
-    padding: 150px 30px 150px 30px;
+    padding: 50vh 30px 150px 30px;
+    background: rgba(0, 0, 0, 0.2);
+    height: 97vh;
+  }
+
+  .social {
+    background: rgba(0, 0, 0, 0.2);
   }
 
   .profile-image {
@@ -310,7 +421,15 @@ footer {
   }
 
   header h1 {
-    font-size: 65px;
+    font-size: 45px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+  }
+
+  header h2 {
+    font-size: 20px;
+    text-transform: none;
   }
   
   .item-image-rectangle-landscape-1{
@@ -328,22 +447,90 @@ footer {
   .item-image-rectangle-portrait{
     display: none;
   } 
+  .work-experience .details {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 850px) 
+and (orientation: landscape) {
+  header {
+    padding: 25vh 30px 150px 30px;
+    background: rgba(0, 0, 0, 0.2);
+    height: 94vh;
+  }
+  .social {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .profile-image {
+    width: 35%;
+    float: right;
+    margin: 0 0 15px 2%;
+  }
+
+  .profile .summary {
+    float: none;
+    width: auto;
+  }
+
+  header h1 {
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+  }
+
+  header h2 {
+    font-size: 20px;
+    text-transform: none;
+  }
+  
+  .item-image-rectangle-landscape-1{
+  width: 100%;
+  height: auto;
+  margin: 10px 0px 10px 0px;
+  }
+  
+  .item-image-rectangle-landscape-2{
+  width: 100%;
+  height: auto;
+  margin: 10px 0px 10px 0px;
+  }
+
+  .item-image-rectangle-portrait{
+    display: none;
+  } 
+
+  .work-experience .details {
+    margin-bottom: 40px;
+  }
 }
 
 /* for smartphones
 --------------------*/
 
-@media (max-width: 480px) {
+@media (max-width: 480px) 
+and (orientation: portrait) {
   header {
-    padding: 100px 30px 100px 30px;
+    padding: 260px 50px !important;
+    background: rgba(0, 0, 0, 0.2);
+    height: 97vh;
+  }
+
+  .social {
+    background: rgba(0, 0, 0, 0.2);
   }
 
   header h1 {
-    font-size: 35px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 0px;
   }
 
   header h2 {
     font-size: 20px;
+    text-transform: none;
   }
 
   .profile-image {
@@ -360,6 +547,7 @@ footer {
   .work-experience .details {
     text-align: left;
     width: 100%;
+    margin-bottom: 40px;
   }
 
   .work-experience .description {
@@ -367,8 +555,8 @@ footer {
     width: 100%;
   }
 
-  .company {
-    font-size: 14px;
+  .description p {
+    color: #3e3e40;;
   }
   
   .content-wrap {
@@ -380,7 +568,115 @@ footer {
   }
 
   .work-experience h3 {
-    font-size: 1.5em;
+    font-size: small;
+  }
+
+  .work-experience p {
+    font-size: 16px;
+  }
+
+  .contact .social {
+    width: 100%;
+    float: inherit;
+    text-align: center;
+    font-size: 30px;
+  }
+  .contact p {
+    text-align: center;
+  }
+  section h1 {
+    text-align: center;
+  }
+
+  .item-image-rectangle-landscape-1{
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding-bottom: 5px;
+  overflow: auto;
+  }
+  
+  .item-image-rectangle-landscape-2{
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding-bottom: 5px;
+  overflow: auto;
+  }
+
+  .item-image-rectangle-portrait{
+    display: none;
+  } 
+
+  label#posttrigger.read-more-trigger, label#post1trigger.read-more-trigger, label#post2trigger.read-more-trigger,
+  label#post3trigger.read-more-trigger, label#post4trigger.read-more-trigger, label#post5trigger.read-more-trigger,
+  label#post6trigger.read-more-trigger, label#post7trigger.read-more-trigger, label#post8trigger.read-more-trigger, 
+  label#post9trigger.read-more-trigger{
+    margin-left: unset;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) 
+and (orientation: landscape) {
+  header {
+    padding: 25% 50px !important;
+    background: rgba(0, 0, 0, 0.2);
+    height: 97vw;
+  }
+
+  .social {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  header h1 {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+  }
+
+  header h2 {
+    font-size: 20px;
+    text-transform: none;
+  }
+
+  .profile-image {
+    width: 75%;
+    float: none;
+    margin: 30px 30px 30px 30px;
+  }
+
+  .profile .summary {
+    float: none;
+    width: auto;
+  }
+
+  .work-experience .details {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .work-experience .description {
+    text-align: left;
+    width: 100%;
+  }
+
+  .description p {
+    color: #3e3e40;;
+  }
+
+  .content-wrap {
+    padding: 30px;
+  }
+
+  h1 {
+    padding-bottom: 30px;
+  }
+
+  .work-experience h3 {
+    font-size: small;
   }
 
   .work-experience p {
@@ -422,4 +718,12 @@ footer {
   margin: 0px;
   padding-bottom: 5px;
   } 
+
+  label#posttrigger.read-more-trigger, label#post1trigger.read-more-trigger, label#post2trigger.read-more-trigger,
+  label#post3trigger.read-more-trigger, label#post4trigger.read-more-trigger, label#post5trigger.read-more-trigger,
+  label#post6trigger.read-more-trigger, label#post7trigger.read-more-trigger, label#post8trigger.read-more-trigger, 
+  label#post9trigger.read-more-trigger{
+    margin-left: unset;
+    width: 100%;
+  }
 }
