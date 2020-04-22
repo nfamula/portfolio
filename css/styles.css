@@ -11,7 +11,7 @@ initial customizations be found here https://github.com/nfamula/llc-responsive-d
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
-  background: url(../images/computer-background.jpg) no-repeat fixed 50%;
+  background: url(../images/black-white-background.jpg) no-repeat fixed 50%;
   background-size: cover;
   padding: 0;
   margin: 0;
@@ -23,24 +23,25 @@ h1, h2, h3, h4 {
   margin: 0;
   color: #3e3e40;
 }
+
 section h1, 
 header h2 {
   text-transform: uppercase;
-  color: #3e3e40;
+  color: #FACF58;
 }
 header h1 {
-  font-family: 'Ultra', serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 80px;
-  color: #f3c3c4;
+  color: #EEEEEE;
 }
 header h2,
 section h1 {
   font-size: 30px;
-  color: #b1b1b1;
+  color: #FACF58;
   margin-bottom: 15px;
 }
 section h1 {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #FACF58;
   margin-bottom: 20px;
 }
 p {
@@ -48,11 +49,11 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 .button {
-  color: #3e3e40;
+  color: #ffffff;
   padding: 5px 10px;
-  border: 2px solid #b1b1b1;
+  border: 2px solid #000000;
   border-radius: 25px;
-  background: #b1b1b1;
+  background: #000000;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -67,12 +68,12 @@ section:nth-child(2n+1) {
   background: #fefefe;
 }
 section:nth-child(2n+2) {
-  color: #f3c3c4;
-  background: rgba(0, 0, 0, 0.4);
+  color: #FACF58;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 a {
-  color: #f3c3c4;
+  color: #EEEEEE;
   text-decoration: none;
 }
 .profile a:hover {
@@ -88,7 +89,7 @@ ul li {
 }
 
 .content-wrap {
-  width: 80%;
+  width: 90%;
   max-width: 1000px;
   margin: 0 auto;
   padding: 90px 0; 
@@ -102,13 +103,16 @@ header {
   text-align: center;
   padding: 200px 50px;
   width: 100%;
+  background: rgba(0, 0, 0, 0.7);
 }
 
-
+header .social {
+  padding: 1em;
+}
 /* ABOUT ME / PROFILE
 ----------------------*/
 .profile h1 {
-  background: #f3c3c4;
+  background: #E04343;
   display: inline-block;
   padding: 10px 20px;
   transform: rotate(-4deg);
@@ -161,23 +165,25 @@ header {
 .read-more-trigger {
   cursor: pointer;
   display: table;
-  padding: 0 .5em;
-  color: #b1b1b1;
-  background-color: #3e3e40;
+  padding: 5px 10px;
+  border: 2px solid #000000;
+  color: #eeeeee;
+  background-color: #000000;
   font-size: .9em;
   line-height: 2;
-  border: 1px solid #3e3e40;
-  border-radius: .25em;
-  margin: auto;
+  border: 1px solid #000000;
+  border-radius: 25px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 10px auto;
   text-align: center;
   position: relative;
-  -webkit-tap-highlight-color: #f3c3c4;
+  -webkit-tap-highlight-color: #FACF58;
 }
 
 .read-more-trigger:hover{
-  background-color: #f3c3c4;
-  border: 1px solid #f3c3c4;
-  color: #3e3e40;
+  background-color: #FACF58;
+  border: 1px solid #FACF58;
+  color: #eeeeee;
 }
 
 label#post10trigger.read-more-trigger, label#post11trigger.read-more-trigger {
@@ -272,25 +278,28 @@ label#post10trigger.read-more-trigger, label#post11trigger.read-more-trigger {
 .company {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.1em;
-  color: #f3c3c4;
 }
 
 .work-experience < a.button:hover {
-  background: #f3c3c4;
-  border: 2px solid #f3c3c4;
+  background: #E04343;
+  border: 2px solid #E04343;
 }
 /*SKILLS
 ----------*/
 .skills {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .skills h1 {
-color: #b1b1b1;
-text-transform: uppercase;
+  text-transform: uppercase;
+  border-bottom: 1px solid #FACF58;
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #FACF58;
 }
+
 .skills p{
- color: #f3c3c4;
+  color: #EEEEEE;
 }
 
 /* EDUCATION
@@ -298,9 +307,6 @@ text-transform: uppercase;
 .education h2 {
   text-transform: uppercase;
   color: #3e3e40;
-}
-.education h3 {
-  color: #f3c3c4;
 }
 
 .education p {
@@ -313,7 +319,7 @@ text-transform: uppercase;
 }
 .contact p {
   margin: 0;
-  color: #b1b1b1;
+  color: #EEEEEE;
 }
 .contact p:first-of-type {
   margin-top: 35px;
@@ -326,11 +332,11 @@ text-transform: uppercase;
 }
 .contact .social a {
   margin: 0 8px;
-  color: #b1b1b1;
+  color: #EEEEEE;
 }
 
 .contact .social a:hover {
-  color: #f3c3c4;
+  color: #FACF58;
   text-decoration: none;
 }
 
@@ -401,12 +407,7 @@ and (orientation: landscape) {
 and (orientation: portrait) {
   header {
     padding: 50vh 30px 150px 30px;
-    background: rgba(0, 0, 0, 0.2);
     height: 97vh;
-  }
-
-  .social {
-    background: rgba(0, 0, 0, 0.2);
   }
 
   .profile-image {
@@ -455,13 +456,10 @@ and (orientation: portrait) {
 @media (min-width: 480px) and (max-width: 850px) 
 and (orientation: landscape) {
   header {
-    padding: 25vh 30px 150px 30px;
-    background: rgba(0, 0, 0, 0.2);
-    height: 94vh;
+    padding: 35vh 30px 150px 30px;
+    height: 99vh;
   }
-  .social {
-    background: rgba(0, 0, 0, 0.2);
-  }
+
   .profile-image {
     width: 35%;
     float: right;
@@ -512,13 +510,9 @@ and (orientation: landscape) {
 @media (max-width: 480px) 
 and (orientation: portrait) {
   header {
-    padding: 260px 50px !important;
-    background: rgba(0, 0, 0, 0.2);
-    height: 97vh;
-  }
-
-  .social {
-    background: rgba(0, 0, 0, 0.2);
+    padding: 200px 50px !important;
+    background: rgba(0, 0, 0, 0.5);
+    height: 99vh;
   }
 
   header h1 {
@@ -560,7 +554,7 @@ and (orientation: portrait) {
   }
   
   .content-wrap {
-    padding: 30px;
+    padding: 10px;
   }
 
   h1 {
@@ -584,7 +578,7 @@ and (orientation: portrait) {
   .contact p {
     text-align: center;
   }
-  section h1 {
+  section h1 {bookwor,
     text-align: center;
   }
 
@@ -611,7 +605,7 @@ and (orientation: portrait) {
   label#posttrigger.read-more-trigger, label#post1trigger.read-more-trigger, label#post2trigger.read-more-trigger,
   label#post3trigger.read-more-trigger, label#post4trigger.read-more-trigger, label#post5trigger.read-more-trigger,
   label#post6trigger.read-more-trigger, label#post7trigger.read-more-trigger, label#post8trigger.read-more-trigger, 
-  label#post9trigger.read-more-trigger{
+  label#post9trigger.read-more-trigger, label#post10trigger.read-more-trigger, label#post11trigger.read-more-trigger{
     margin-left: unset;
     width: 100%;
   }
@@ -621,12 +615,7 @@ and (orientation: portrait) {
 and (orientation: landscape) {
   header {
     padding: 25% 50px !important;
-    background: rgba(0, 0, 0, 0.2);
     height: 97vw;
-  }
-
-  .social {
-    background: rgba(0, 0, 0, 0.2);
   }
 
   header h1 {

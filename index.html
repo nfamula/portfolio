@@ -20,11 +20,13 @@
     <header>
       <h1>Natalie Famula</h1>
       <h2>Web Developer</h2>
-      <a class="button" href="#projects">view projects</a>
-    </header>
-    <div class="social" style="text-align: center;">
+      <div class="social" style="text-align: center;">
         <a href="https://ca.linkedin.com/in/nataliefamula" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
         <a href="https://github.com/nfamula" target="_blank" title="Github"><i class="fa fa-github-alt"></i></a>
+      </div>
+      <a class="button" href="#projects">view projects</a>
+    </header>
+    <div>
     </div>
     <!-- WORK EXPERIENCE -->
     <section class="work-experience" id="projects">
@@ -47,9 +49,11 @@
           </div>
           <div class="description">
           <p>Full time developer role in Fintech.</p>
-          <p>
+          <input type="checkbox" class="read-more-state" id="post1" />
+          <p class="read-more-target">
             In November 2018, I was brought on as the sole developer for all digital marketing materials. I completed the build and shipped this high traffic marketing website. Financeit.io is a custom WordPress theme based on unique designs. It contains over 150 pages (English and French), includes custom Salesforce integration, Pardot form handlers for drip email campaigns, and enterprise partner landing pages. My responsibilities included creating and maintaining a static microsite for an enterprise partnership, HTML emails, gated content landing pages, research for moving to headless CMS with Gatsby(react.js), contributing to an ember.js app, and AODA accessibility testing.
           </p>
+           <label for="post1" id="post1trigger" class="read-more-trigger"></label>
           </div>
         </div>
         <div class="item">
@@ -68,9 +72,11 @@
             </a>
           </div>
           <div class="description">
-            <p>E-commerce shop refresh for California based meal-prep company.</p>
-            <p>
+            <p>Custom WooCommerce shop for California based meal-prep company.</p>
+            <input type="checkbox" class="read-more-state" id="post2" />
+            <p class="read-more-target">
             Custom wordpress/woocommerce theme with custom meal packs and meal deals. This website refresh doubled the client's revenue. My role focused mainly on shop functionality, and adding custom features in php templates. Deployed from development environment to permanent URL with CPanel. Worked on development server with FileZilla as FTP client, used trello for project management. Built with PHP (wordpress), HTML5, CSS3, Javascript, jQuery.</p>
+           <label for="post2" id="post2trigger" class="read-more-trigger"></label>
           </div>
         </div>
 
@@ -91,12 +97,14 @@
             </a>
           </div>
           <div class="description">
-            <p>Website refresh for real estate developer.</p>
-            <p>
+            <p>Custom Wordpress Website for real estate developer.</p>
+            <input type="checkbox" class="read-more-state" id="post3" />
+            <p class="read-more-target">
             Custom wordpress theme with reusable templates for pages, and uploaded content from photoshop files.
             Worked on development server with FileZilla as FTP client, used Airtable for project management.
             Deployed from development environment to permanent URL with CPanel.
             Built with PHP (wordpress), HTML5, CSS3, Javascript, jQuery.</p>
+            <label for="post3" id="post3trigger" class="read-more-trigger"></label>
           </div>
         </div>
 
@@ -117,10 +125,10 @@
             </a>
           </div>
           <div class="description">
-            <p>Website refresh for real estate developer.</p>
-            <p>Developed Wordpress theme with jQuery drop down content sections, and uploaded content from designer's photoshop files.
-            Worked on development server with FileZilla as FTP client, used Airtable for project management.
-            Built with PHP (wordpress), HTML5, CSS3, Javascript, jQuery.</p>
+            <p>Custom Wordpress website for real estate developer.</p>
+            <input type="checkbox" class="read-more-state" id="post4" />
+            <p class="read-more-target">Developed Wordpress theme with jQuery drop down content sections, and uploaded content from designer's photoshop files. Worked on development server with FileZilla as FTP client, used Airtable for project management. Built with PHP (wordpress), HTML5, CSS3, Javascript, jQuery.</p>
+            <label for="post4" id="post4trigger" class="read-more-trigger"></label>
           </div>
         </div>
 
@@ -141,11 +149,10 @@
             </a>
           </div>
           <div class="description">
-            <p>New website build for Duke's restaurant.</p>
-            <p>Assisted senior developer in developing custom wordpress theme.
-            Uploaded and edited content for all restaurant menu items.
-            Manually installed wordpress plugins.
-            Built with PHP (wordpress), HTML5, CSS3, Javascript, jQuery.</p>
+            <p>Custom Wordpress website for Duke's restaurant.</p>
+            <input type="checkbox" class="read-more-state" id="post5" />
+            <p class="read-more-target">Assisted senior developer in developing custom wordpress theme. Uploaded and edited content for all restaurant menu items. Manually installed wordpress plugins. Built with PHP (wordpress), HTML5, CSS3, Javascript, jQuery.</p>
+            <label for="post5" id="post5trigger" class="read-more-trigger"></label>
           </div>
         </div>
 
@@ -166,10 +173,12 @@
             </a>
           </div>
           <div class="description">
-            <p>Website refresh for Bayview Village shopping mall.</p>
-            Built with ReactJS, React-Bootstrap, NPM, Webpack, SCSS, JSON.
+            <p>ReactJS website refresh for Bayview Village shopping mall.</p>
+            <input type="checkbox" class="read-more-state" id="post6" />
+            <p class="read-more-target">Built with ReactJS, React-Bootstrap, NPM, Webpack, SCSS, JSON.
             Layouts and styling for Guest Services, Leasing, Visit Us, Media Room, Contact Us, Privacy Policy, BVTV, and Employment pages as well as footer working from PSDs created by designer.
             Added map with google maps API. Used ReactJS to iterate through JSON mixins to display data while database was in development. Provided UX feedback. Worked on development server with FileZilla as FTP client, used JIRA for project management.</p>
+            <label for="post6" id="post6trigger" class="read-more-trigger"></label>
           </div>
         </div>
 
@@ -190,10 +199,10 @@
             </a>
           </div>
           <div class="description">
-          <p>New website build for local tea company.</p>
-          <p>Collaborated with senior php developer to customize Wordpress Layers theme and created products in WooCommerce shop. HTML5, CSS3, JQuery, AJAX, and some PHP used.
-          Installed Wordpress plugins, implemented new UX features, optimized for mobile devices.
-          Worked on development server, using FileZilla as FTP client.</p>
+          <p>Custom Wordpress website for local tea company.</p>
+          <input type="checkbox" class="read-more-state" id="post7" />
+          <p class="read-more-target">Collaborated with senior php developer to customize Wordpress Layers theme and created products in WooCommerce shop. HTML5, CSS3, JQuery, AJAX, and some PHP used. Installed Wordpress plugins, implemented new UX features, optimized for mobile devices. FileZilla as FTP client.</p>
+          <label for="post7" id="post7trigger" class="read-more-trigger"></label>
           </div>
         </div>
 
@@ -213,10 +222,11 @@
             </a>
           </div>
           <div class="description">
-          <p>New webiste build for local drywall company.</p>
-          <p>Customized themeforest wordpress theme using CSS3 and HTML5, based on mock ups.
-          Created content as per client's specifications.
+          <p>Customized existing Wordpress theme for local drywall company.</p>
+          <input type="checkbox" class="read-more-state" id="post8" />
+          <p class="read-more-target">Customized themeforest wordpress theme using CSS3 and HTML5, based on mock ups. Created content as per client's specifications.
           Populated theme with content.</p>
+          <label for="post8" id="post8trigger" class="read-more-trigger"></label>
           </div>
         </div>
 
@@ -236,8 +246,10 @@
             </a>
           </div>
           <div class="description">
-          <p>New website build for digital marketing agency.</p>
-          <p>Static site built with HTML5, CSS3, bootstrap, SCSS, Jekyll. Customized Jekyll template for local digital agency, to reflect re-brand, and make responsive, in collaboration with agency creative director and senior developer. Assisted with content creation.</p> 
+          <p>Jekyll static website build for digital marketing agency.</p>
+          <input type="checkbox" class="read-more-state" id="post9" />
+          <p class="read-more-target">Static site built with HTML5, CSS3, bootstrap, SCSS, Jekyll. Customized Jekyll template for local digital agency, to reflect re-brand, and make responsive, in collaboration with agency creative director and senior developer. Assisted with content creation.</p>
+          <label for="post9" id="post9trigger" class="read-more-trigger"></label>
           </div>
         </div>
 
@@ -257,8 +269,10 @@
             </a>
           </div>
           <div class="description">
-            <p>Lighthouse Labs Final Project</p>
-            <p>This project was built using Ruby, Ruby on Rails, PostgreSQL, HTML5, CSS3 and jQuery, with classmate. Trend Report is a web application that scrapes trendy blogs and websites and provides articles from different categories including food and fashion. The purpose of this application is to allow a user to access articles related to a certain category without having to visit each individual blog or website. What I learned: how to work with a bootstrap based theme, the importance of mobile optimizations, and you definitely shouldn't use a hard coded web-scraper 'cause it won't ever scrape again after deployment (background workers would have been a better choice).</p>
+            <p>Ruby On Rails App</p>
+            <input type="checkbox" class="read-more-state" id="post10" />
+            <p class="read-more-target">This project was built using Ruby, Ruby on Rails, PostgreSQL, HTML5, CSS3 and jQuery, with Lighthouse Labs classmate as our final project. Trend Report is a web application that scrapes trendy blogs and websites and provides articles from different categories including food and fashion. The purpose of this application is to allow a user to access articles related to a certain category without having to visit each individual blog or website. What I learned: how to work with a bootstrap based theme, the importance of mobile optimizations, and you definitely shouldn't use a hard coded web-scraper 'cause it won't ever scrape again after deployment (background workers would have been a better choice).</p>
+            <label for="post10" id="post10trigger" class="read-more-trigger"></label>
           </div>
         </div>
 
@@ -278,9 +292,10 @@
             </a>
           </div>
           <div class="description">
-            <p>Lighthouse Labs Midterm Project</p>
-            <p>Bookworm was built using Sinatra, Ruby, HTML5 and CSS3 with partner Sandeep Samra in just three days!
-            Web app for managing the books you're reading, and the books you want to read. You can add a book and a cover photo to your list of books you want to read, and once you're done reading you can move it to another list that you can look at later.</p>
+            <p>Ruby Sinatra App</p>
+            <input type="checkbox" class="read-more-state" id="post11" />
+            <p class="read-more-target">Bookworm was built using Sinatra, Ruby, HTML5 and CSS3 with Lighthouse Labs classmate as our midterm project in just three days! Web app for managing the books you're reading, and the books you want to read. You can add a book and a cover photo to your list of books you want to read, and once you're done reading you can move it to another list that you can look at later.</p>
+            <label for="post11" id="post11trigger" class="read-more-trigger"></label>
           </div>
         </div>
 
@@ -300,10 +315,15 @@
     <div class="skills">
       <div class="content-wrap">
       <h1>Skills</h1>
-      <p>
-        JavaScript,  HTML5, CSS3, jQuery, AJAX, JSON,
+      <p>I am a swiss army knife! I have created a range of static micro-sites, websites using a CMS, custom e-commerce sites with woocommerce and shopify, and contributed to the front-end development of different apps. I have created HTML ads, animated ads using google web designer, HTML emails (litmus, pardot, zerb). Comfortable in agile and waterfall environments, agencies, startups, and traditional tech environments.</p>
+      <br />
+      <input type="checkbox" class="read-more-state" id="skills" />
+        <p class="read-more-target">
+        JavaScript, HTML5, CSS3, jQuery, AJAX, JSON,
         <br />
-        ReactJS, Ruby on Rails, Bootstrap
+        ReactJS, Ruby on Rails, Bootstrap, tailwind.css, gatsby.js, ember.js, aurelia.js
+        <br />
+        Headless CMS with gatsby.js frontend and wordpress or prismic backend
         <br />
         Git / Github
         <br />
@@ -311,17 +331,17 @@
         <br />
         PHP for wordpress, woocommerce
         <br />
-        Extracting content from Photoshop files
+        Extracting content and designs from Photoshop and Sketch files
         <br />
         Google Analytics goals and implementation of tracking pixels
         <br />
         Testing websites for responsiveness, accessibility, and cross browser compatibility
         <br />
-        Responsive Websites using both media queries and bootstrap
+        Responsive websites using media queries, bootstrap, or tailwind
         <br />
-        Using google APIs
-        <br />
+        Working with APIs
       </p>
+      <label for="skills" id="skillstrigger" class="read-more-trigger" style="margin-left: 0px !important"></label>
       </div>
     </div>
     <!-- EDUCATION -->
@@ -332,7 +352,7 @@
         <div class="item" id="lighthouse">
           <h2>Lighthouse Labs, January - March 2016</h2>
           <h3>Web Developer Bootcamp</h3>
-           <input type="checkbox" class="read-more-state" id="post10" />
+          <input type="checkbox" class="read-more-state" id="post12" />
           <p class="read-more-target">Successfully completed full time 8 week web developer bootcamp, and deployed 2 web applications.
           <br />
           Topics Covered:
@@ -347,26 +367,31 @@
           <br />
           Version control: Git / Github
           <br />
-          Deployment: Heroku
+          Deployment: Heroku, Serge
           <br />
           Google Analytics goals and implementation
           <br />
           OOP, AJAX, JSON, REST, MVC</p>
-          <label for="post10" id="post10trigger" class="read-more-trigger" style="margin-left: none !important"></label>
+          <label for="post12" id="post12trigger" class="read-more-trigger" style="margin-left: 0px !important"></label>
+        </div>
+        <div id="grad">
+          <br />
+          <h2>Communication Disorders Sciences, Class of 2012</h2>
+          <h3>Graduate Certificate</h3>
         </div>
         <div class="item" id="glendon">
           <br />
           <h2>York University - Glendon, Class of 2011</h2>
           <h3>Honours BA Linguistics</h3>
-          <input type="checkbox" class="read-more-state" id="post11" />
-          <p class="read-more-target">Awarded Certificate of Bilingualism.
+          <input type="checkbox" class="read-more-state" id="post13" />
+          <p class="read-more-target">Awarded Certificate of Bilingualism
           <br />
-          Awarded William Westfall Canadian Studies Award.
+          Awarded William Westfall Canadian Studies Award
           <br />
           Vice President Glendon Linguistics Club
           <br />
           Courses included: Symbolic Logic, Syntax, Semantics, Statistics</p>
-          <label for="post11" id="post11trigger" class="read-more-trigger" style="margin-left: none !important"></label>
+          <label for="post13" id="post13trigger" class="read-more-trigger" style="margin-left: 0px !important"></label>
         </div>
       </div>
     </section>
@@ -377,9 +402,7 @@
         <h1>Get in touch!</h1>
 
         <div class="social">
-          <a href="https://twitter.com/ColourfulCactus" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a>
           <a href="https://ca.linkedin.com/in/nataliefamula" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/colourful_cactus/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>
           <a href="https://github.com/nfamula" target="_blank" title="Github"><i class="fa fa-github-alt"></i></a>
         </div>
       
@@ -388,7 +411,7 @@
         <p>Toronto</p>
 
         <footer>
-          <p class="copyright">Copyright &#169; 2017 by Natalie Famula</p>
+          <p class="copyright">Copyright &#169; 2020 by Natalie Famula</p>
         </footer>
       </div>
     </section>
